@@ -18,11 +18,11 @@
         android:theme="@style/Theme.Ecotele">
         <activity
             android:name=".MainActivity"
-            android:banner="@drawable/app_icon_your_company"
+            android:banner="@drawable/tvimage"
             android:exported="true"
-            android:icon="@drawable/app_icon_your_company"
+            android:icon="@drawable/tvimage"
             android:label="@string/app_name"
-            android:logo="@drawable/app_icon_your_company"
+            android:logo="@drawable/tvimage"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
