@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -102,6 +103,9 @@ public class MainActivity extends Activity {
             @Override
             public void onFailure(Call<List<Canal>> call, Throwable t) {
                 // Manejar el caso de error en la solicitud
+                t.printStackTrace();
+                // Agregar un Log para obtener más detalles sobre el error
+                Log.e("Retrofit", "Error en la solicitud: " + t.getMessage());
             }
         });
     }
